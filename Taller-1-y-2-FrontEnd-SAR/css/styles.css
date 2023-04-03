@@ -1,0 +1,308 @@
+.btn {
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: #ebb143;
+  border: solid 1px #ebb143;
+}
+.btn-primary:is(:hover, :active, :focus) {
+  background-color: #e39d18;
+  border: solid 1px #e39d18;
+}
+
+.btn-secondary {
+  background-color: #95cad0;
+  border: solid 1px #95cad0;
+  color: #2d3238;
+}
+.btn-secondary:is(:hover, :active, :focus) {
+  background-color: #72b8c0;
+  border: solid 1px #72b8c0;
+}
+
+.btn-line {
+  background-color: transparent;
+  border: solid 1px #2d3238;
+}
+.btn-line:is(:hover, :active, :focus) {
+  border-color: solid 1px #16191c;
+}
+
+input, textarea {
+  background-color: lightgray;
+  height: 38px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+form label {
+  display: block;
+}
+
+body {
+  color: #2d3238;
+}
+body .navbar-toggler {
+  color: #2d3238;
+}
+body .hex-nav {
+  background-color: #273849;
+}
+body .hex-nav .container {
+  max-width: 960px;
+}
+body .hex-nav .container .hex {
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  width: 120px;
+  height: 100px;
+  background: #ffffff;
+  box-sizing: border-box;
+  -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s ease;
+}
+body .hex-nav .container .hex:is(:hover, :active, :focus) {
+  background-color: #fff !important;
+}
+body .hex-nav .container .hex:is(:hover, :active, :focus) .hex-i i {
+  color: #fff;
+}
+body .hex-nav .container .hex .hex-i {
+  color: inherit;
+  background-color: #273849; /*color of the main-background*/
+  width: 116px; /* container height - (border thickness * 2) */
+  height: 96px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex;
+}
+body .hex-nav .container .hex .hex-i i {
+  margin-top: -12px;
+  font-size: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease;
+  -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+body .play_arrow {
+  background-color: #44b2e4 !important;
+  color: #44b2e4;
+  position: relative;
+}
+body .play_arrow:after {
+  position: absolute;
+  bottom: 16px;
+  text-align: center;
+  color: #ebb143 !important;
+  font-size: 10px;
+}
+body .play_arrow:after {
+  content: "VIDEOS";
+}
+body .videogame_asset {
+  background-color: #49b5c2 !important;
+  color: #49b5c2;
+  position: relative;
+}
+body .videogame_asset:after {
+  position: absolute;
+  bottom: 16px;
+  text-align: center;
+  color: #ebb143 !important;
+  font-size: 10px;
+}
+body .videogame_asset:after {
+  content: "JUEGOS";
+}
+body .local_play {
+  background-color: #7af5f5 !important;
+  color: #7af5f5;
+  position: relative;
+}
+body .local_play:after {
+  position: absolute;
+  bottom: 16px;
+  text-align: center;
+  color: #ebb143 !important;
+  font-size: 10px;
+}
+body .local_play:after {
+  content: "PARQUES";
+}
+body .movie_filter {
+  background-color: #93e2d5 !important;
+  color: #93e2d5;
+  position: relative;
+}
+body .movie_filter:after {
+  position: absolute;
+  bottom: 16px;
+  text-align: center;
+  color: #ebb143 !important;
+  font-size: 10px;
+}
+body .movie_filter:after {
+  content: "SAGA";
+}
+body .library_books {
+  background-color: #c9cf6c !important;
+  color: #c9cf6c;
+  position: relative;
+}
+body .library_books:after {
+  position: absolute;
+  bottom: 16px;
+  text-align: center;
+  color: #ebb143 !important;
+  font-size: 10px;
+}
+body .library_books:after {
+  content: "INGEN";
+}
+body .jumbotron {
+  background-image: url("https://releasedate.me/wp-content/uploads/2021/11/jurassic-world-camp-cretaceous-promo-bg.webp");
+  background-position: 0px -80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 450px;
+  margin-bottom: 0;
+}
+body .jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+body .jumbotron .container * {
+  color: #ffffff;
+}
+body .jumbotron .container .btn {
+  width: 250px;
+  text-transform: uppercase;
+}
+body .jumbotron .blackdrop {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+body .album .dinos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  flex: 1;
+}
+body .album .card {
+  border-radius: 0;
+}
+body .album .card .card-image-top {
+  display: grid;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+body .album .card .card-image-top img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+body .album .card .card-body {
+  z-index: 1;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6588235294), rgba(0, 0, 0, 0));
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  text-align: #ffffff;
+}
+body .album .card .card-body .line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+body .album .card .card-body .btn {
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  min-width: 50px;
+}
+body .album .card .card-body .btn:is(:hover, :focus, :active) {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #2d3238;
+}
+body .album .card .card-body .text-muted {
+  color: #ffffff !important;
+  opacity: 0.7;
+}
+
+footer {
+  font-size: 12px;
+  background-color: #273849;
+  color: white;
+  text-align: center;
+}
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+footer .social a {
+  text-decoration: none;
+}
+
+table {
+  background-color: red;
+}
+table tr, table th, table td {
+  border: solid 1px violet;
+}
+
+@media screen and (max-width: 992px) {
+  body .jumbotron {
+    background-size: auto;
+    height: 100%;
+  }
+  body .jumbotron .lead {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .hex-nav .container {
+    max-width: 100%;
+  }
+  .hex-nav .container .hex label {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .hex-nav .container .hex {
+    width: 60px !important;
+    height: 50px !important;
+    background-color: #273849 !important;
+  }
+  body .hex-nav .container .hex:after {
+    display: none;
+  }
+  body .hex-nav .container .hex:is(:hover, :active, :focus) {
+    background-color: transparent !important;
+  }
+  body .hex-nav .container .hex .hex-i i {
+    font-size: 40px;
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
