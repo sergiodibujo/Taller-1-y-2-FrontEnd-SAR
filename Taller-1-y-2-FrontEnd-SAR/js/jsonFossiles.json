@@ -1,6 +1,6 @@
 [
     {
-       "properties": {
+       "results": {
           "file-name": "acanthostega",
           "name": {
              "name-USen": "acanthostega",
@@ -25,7 +25,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "amber",
           "name": {
              "name-USen": "amber",
@@ -50,7 +50,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "ammonite",
           "name": {
              "name-USen": "ammonite",
@@ -75,7 +75,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "ankylo_skull",
           "name": {
              "name-USen": "ankylo skull",
@@ -100,7 +100,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "ankylo_tail",
           "name": {
              "name-USen": "ankylo tail",
@@ -125,7 +125,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "ankylo_torso",
           "name": {
              "name-USen": "ankylo torso",
@@ -150,7 +150,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "anomalocaris",
           "name": {
              "name-USen": "anomalocaris",
@@ -175,7 +175,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "archaeopteryx",
           "name": {
              "name-USen": "archaeopteryx",
@@ -200,7 +200,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "archelon_skull",
           "name": {
              "name-USen": "archelon skull",
@@ -225,7 +225,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "archelon_tail",
           "name": {
              "name-USen": "archelon tail",
@@ -250,7 +250,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "australopith",
           "name": {
              "name-USen": "australopith",
@@ -275,7 +275,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "brachio_chest",
           "name": {
              "name-USen": "brachio chest",
@@ -300,7 +300,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "brachio_pelvis",
           "name": {
              "name-USen": "brachio pelvis",
@@ -325,7 +325,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "brachio_skull",
           "name": {
              "name-USen": "brachio skull",
@@ -350,7 +350,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "brachio_tail",
           "name": {
              "name-USen": "brachio tail",
@@ -375,7 +375,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "coprolite",
           "name": {
              "name-USen": "coprolite",
@@ -400,7 +400,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "deinony_tail",
           "name": {
              "name-USen": "deinony tail",
@@ -425,7 +425,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "deinony_torso",
           "name": {
              "name-USen": "deinony torso",
@@ -450,7 +450,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "dimetrodon_skull",
           "name": {
              "name-USen": "dimetrodon skull",
@@ -475,7 +475,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "dimetrodon_torso",
           "name": {
              "name-USen": "dimetrodon torso",
@@ -500,7 +500,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "dinosaur_track",
           "name": {
              "name-USen": "dinosaur track",
@@ -525,7 +525,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "diplo_chest",
           "name": {
              "name-USen": "diplo chest",
@@ -550,7 +550,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "diplo_neck",
           "name": {
              "name-USen": "diplo neck",
@@ -575,7 +575,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "diplo_pelvis",
           "name": {
              "name-USen": "diplo pelvis",
@@ -600,7 +600,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "diplo_skull",
           "name": {
              "name-USen": "diplo skull",
@@ -625,7 +625,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "diplo_tail",
           "name": {
              "name-USen": "diplo tail",
@@ -650,7 +650,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "diplo_tail_tip",
           "name": {
              "name-USen": "diplo tail tip",
@@ -675,7 +675,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "dunkleosteus",
           "name": {
              "name-USen": "dunkleosteus",
@@ -700,7 +700,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "eusthenopteron",
           "name": {
              "name-USen": "eusthenopteron",
@@ -725,7 +725,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "iguanodon_skull",
           "name": {
              "name-USen": "iguanodon skull",
@@ -750,7 +750,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "iguanodon_tail",
           "name": {
              "name-USen": "iguanodon tail",
@@ -775,7 +775,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "iguanodon_torso",
           "name": {
              "name-USen": "iguanodon torso",
@@ -800,7 +800,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "juramaia",
           "name": {
              "name-USen": "juramaia",
@@ -825,7 +825,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "left_megalo_side",
           "name": {
              "name-USen": "left megalo side",
@@ -850,7 +850,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "left_ptera_wing",
           "name": {
              "name-USen": "left ptera wing",
@@ -875,7 +875,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "left_quetzal_wing",
           "name": {
              "name-USen": "left quetzal wing",
@@ -900,7 +900,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "mammoth_skull",
           "name": {
              "name-USen": "mammoth skull",
@@ -925,7 +925,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "mammoth_torso",
           "name": {
              "name-USen": "mammoth torso",
@@ -950,7 +950,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "megacero_skull",
           "name": {
              "name-USen": "megacero skull",
@@ -975,7 +975,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "megacero_tail",
           "name": {
              "name-USen": "megacero tail",
@@ -1000,7 +1000,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "megacero_torso",
           "name": {
              "name-USen": "megacero torso",
@@ -1025,7 +1025,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "myllokunmingia",
           "name": {
              "name-USen": "myllokunmingia",
@@ -1050,7 +1050,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "ophthalmo_skull",
           "name": {
              "name-USen": "ophthalmo skull",
@@ -1075,7 +1075,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "ophthalmo_torso",
           "name": {
              "name-USen": "ophthalmo torso",
@@ -1100,7 +1100,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "pachy_skull",
           "name": {
              "name-USen": "pachy skull",
@@ -1125,7 +1125,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "pachy_tail",
           "name": {
              "name-USen": "pachy tail",
@@ -1150,7 +1150,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "parasaur_skull",
           "name": {
              "name-USen": "parasaur skull",
@@ -1175,7 +1175,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "parasaur_tail",
           "name": {
              "name-USen": "parasaur tail",
@@ -1200,7 +1200,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "parasaur_torso",
           "name": {
              "name-USen": "parasaur torso",
@@ -1225,7 +1225,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "plesio_skull",
           "name": {
              "name-USen": "plesio skull",
@@ -1250,7 +1250,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "plesio_tail",
           "name": {
              "name-USen": "plesio tail",
@@ -1275,7 +1275,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "plesio_torso",
           "name": {
              "name-USen": "plesio torso",
@@ -1300,7 +1300,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "ptera_body",
           "name": {
              "name-USen": "ptera body",
@@ -1325,7 +1325,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "quetzal_torso",
           "name": {
              "name-USen": "quetzal torso",
@@ -1350,7 +1350,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "right_megalo_side",
           "name": {
              "name-USen": "right megalo side",
@@ -1375,7 +1375,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "right_ptera_wing",
           "name": {
              "name-USen": "right ptera wing",
@@ -1400,7 +1400,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "right_quetzal_wing",
           "name": {
              "name-USen": "right quetzal wing",
@@ -1425,7 +1425,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "sabertooth_skull",
           "name": {
              "name-USen": "sabertooth skull",
@@ -1450,7 +1450,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "sabertooth_tail",
           "name": {
              "name-USen": "sabertooth tail",
@@ -1475,7 +1475,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "shark-tooth_pattern",
           "name": {
              "name-USen": "shark-tooth pattern",
@@ -1500,7 +1500,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "spino_skull",
           "name": {
              "name-USen": "spino skull",
@@ -1525,7 +1525,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "spino_tail",
           "name": {
              "name-USen": "spino tail",
@@ -1550,7 +1550,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "spino_torso",
           "name": {
              "name-USen": "spino torso",
@@ -1575,7 +1575,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "stego_skull",
           "name": {
              "name-USen": "stego skull",
@@ -1600,7 +1600,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "stego_tail",
           "name": {
              "name-USen": "stego tail",
@@ -1625,7 +1625,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "stego_torso",
           "name": {
              "name-USen": "stego torso",
@@ -1650,7 +1650,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "trex_skull",
           "name": {
              "name-USen": "T. rex skull",
@@ -1675,7 +1675,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "trex_tail",
           "name": {
              "name-USen": "T. rex tail",
@@ -1700,7 +1700,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "trex_torso",
           "name": {
              "name-USen": "T. rex torso",
@@ -1725,7 +1725,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "tricera_skull",
           "name": {
              "name-USen": "tricera skull",
@@ -1750,7 +1750,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "tricera_tail",
           "name": {
              "name-USen": "tricera tail",
@@ -1775,7 +1775,7 @@
        }
     },
     {
-       "properties": {
+       "results": {
           "file-name": "tricera_torso",
           "name": {
              "name-USen": "tricera torso",
@@ -1800,8 +1800,7 @@
        }
     },
     {
-       "generic-name": "trilobite",
-       "properties": {
+       "results": {
           "file-name": "trilobite",
           "name": {
              "name-USen": "trilobite",
