@@ -22,14 +22,17 @@
 
 
 
+
 // fetch("https://acnhapi.com/v1/fossils")
+// fetch("https://glohopro.com/echo/json/jsonFossiles.json")
+// fetch("https://constructores.glde18.com/echo/jsonFossiles.json")
 fetch("https://raw.githubusercontent.com/sergiodibujo/Taller-1-y-2-FrontEnd-SARF/main/Taller-1-y-2-FrontEnd-SAR/js/jsonFossiles.json")
   .then(response => response.json())
   .then(data => {
 
-	  const dynoArray = data.results;
+	  const dynoArray = data;
 	  console.log(dynoArray)
-	  console.log(`lenght: ${dynoArray.lenght}`)
+	//   console.log(`lenght: ${dynoArray.lenght}`)
 	
 	
 		const table = document.createElement('table');
