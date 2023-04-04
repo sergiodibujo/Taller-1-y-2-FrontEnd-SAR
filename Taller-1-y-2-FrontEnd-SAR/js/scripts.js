@@ -27,7 +27,7 @@ fetch("https://raw.githubusercontent.com/sergiodibujo/Taller-1-y-2-FrontEnd-SARF
   .then(response => response.json())
   .then(data => {
 
-	  const dynoArray = data;
+	  const dynoArray = data.results;
 	  console.log(dynoArray)
 	  console.log(`lenght: ${dynoArray.lenght}`)
 	
