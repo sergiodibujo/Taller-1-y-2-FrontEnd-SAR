@@ -169,7 +169,7 @@ body .library_books:after {
   content: "INGEN";
 }
 body .jumbotron {
-  background-image: url("https://releasedate.me/wp-content/uploads/2021/11/jurassic-world-camp-cretaceous-promo-bg.webp");
+  background-image: url("../img/jurassic-world-camp-cretaceous-promo-bg.webp");
   background-position: 0px -80px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -177,10 +177,15 @@ body .jumbotron {
   position: relative;
   height: 450px;
   margin-bottom: 0;
+  display: flex;
 }
 body .jumbotron .container {
   position: relative;
   z-index: 1;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
 }
 body .jumbotron .container * {
   color: #ffffff;
