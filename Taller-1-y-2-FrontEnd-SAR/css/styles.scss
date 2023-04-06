@@ -224,7 +224,7 @@ body {
             border-radius: 0;
 
             .card-image-top {
-                display: grid;
+                // display: grid;
                 width: 100%;
                 height: 200px;
                 overflow: hidden;
@@ -238,12 +238,17 @@ body {
             
             .card-body {
                 z-index: 1;
-                background-image: linear-gradient(to top, #000000a8, #00000000);
+                background-image: linear-gradient(to top, #000000c3, #00000000);
                 color: $light-color;
                 position: absolute;
                 bottom: 0;
                 text-align: $light-color;
+                width: 100%;
                 
+                .card-text {
+                    font-size: 13px;
+                    line-height: 125%;
+                }
                 .line-clamp {
                     display: -webkit-box;
                     -webkit-line-clamp: 2;
@@ -265,6 +270,8 @@ body {
                 .text-muted {
                     color: $light-color!important;
                     opacity: .7;
+                    line-height: 110%;
+                    text-align: right;
                 }
             }   
         }

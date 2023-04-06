@@ -213,7 +213,6 @@ body .album .card {
   border-radius: 0;
 }
 body .album .card .card-image-top {
-  display: grid;
   width: 100%;
   height: 200px;
   overflow: hidden;
@@ -226,11 +225,16 @@ body .album .card .card-image-top img {
 }
 body .album .card .card-body {
   z-index: 1;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6588235294), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7647058824), rgba(0, 0, 0, 0));
   color: #ffffff;
   position: absolute;
   bottom: 0;
   text-align: #ffffff;
+  width: 100%;
+}
+body .album .card .card-body .card-text {
+  font-size: 13px;
+  line-height: 125%;
 }
 body .album .card .card-body .line-clamp {
   display: -webkit-box;
@@ -250,6 +254,8 @@ body .album .card .card-body .btn:is(:hover, :focus, :active) {
 body .album .card .card-body .text-muted {
   color: #ffffff !important;
   opacity: 0.7;
+  line-height: 110%;
+  text-align: right;
 }
 
 footer {

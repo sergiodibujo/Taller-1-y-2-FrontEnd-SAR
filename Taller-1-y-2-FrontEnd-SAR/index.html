@@ -101,10 +101,11 @@
             <section class="album py-5 bg-light cards">
 
                 <div class="text-center d-flex justify-content-center justify-content-center flex-column mb-4">
-                    <h3 class="mb-3">Busca un Dino</h3>
+                    <p>Mientras vas al parque conoce lo que quedó de ellos</p>
+                    <h3 class="mb-3">Busca un Fósil</h3>
                     <form class="form-inline d-flex justify-content-center justify-content-center">
                         <div class="form-group mb-2">
-                            <input type="text" class="" id="dynoName" name="searchDynof" value="Escribe un dino">
+                            <input type="text" class="" id="dynoName" name="searchDynof" value="" placeholder="Mi Fósil">
                         </div>
                         <button type="submit" onclick="buscarDyno()" class="btn btn-primary mb-2">Buscar</button>
                     </form>
@@ -112,14 +113,9 @@
 
                 <div class="container d-flex flex-column">
 
-                    <div class="dynoTabla" id="dynoTabla">
-
-                    </div>
-
-
-                    <ul class="list-unstyled dinos">
+                    <ul class="list-unstyled dinos" id="dinos">
                         <!-- Aqui tengo que poner a rodar esto -->
-                        <li class="dino">
+                        <!-- <li class="dino">
                             <div class="card">
                                 <div class="card-image-top">
                                     <img src="img/wk-jurassic0501-5.webp"
@@ -138,172 +134,18 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
 
 
-                        <li class="dino">
-                            <div class="card">
-                                <div class="card-image-top">
-                                    <img src="img/wk-jurassic0501-5.webp"
-                                        alt="">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text line-clamp">This is a wider card with supporting text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#edit-dino">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dino">
-                            <div class="card">
-                                <div class="card-image-top">
-                                    <img src="img/wk-jurassic0501-5.webp"
-                                        alt="">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text line-clamp">This is a wider card with supporting text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#edit-dino">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
 
-                        <li class="dino">
-                            <div class="card">
-                                <div class="card-image-top">
-                                    <img src="img/wk-jurassic0501-5.webp"
-                                        alt="">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text line-clamp">This is a wider card with supporting text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#edit-dino">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dino">
-                            <div class="card">
-                                <div class="card-image-top">
-                                    <img src="img/wk-jurassic0501-5.webp"
-                                        alt="">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text line-clamp">This is a wider card with supporting text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#edit-dino">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dino">
-                            <div class="card">
-                                <div class="card-image-top">
-                                    <img src="img/wk-jurassic0501-5.webp"
-                                        alt="">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text line-clamp">This is a wider card with supporting text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#edit-dino">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="dino">
-                            <div class="card">
-                                <div class="card-image-top">
-                                    <img src="img/wk-jurassic0501-5.webp"
-                                        alt="">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text line-clamp">This is a wider card with supporting text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#edit-dino">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dino">
-                            <div class="card">
-                                <div class="card-image-top">
-                                    <img src="img/wk-jurassic0501-5.webp"
-                                        alt="">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text line-clamp">This is a wider card with supporting text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#edit-dino">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dino">
-                            <div class="card">
-                                <div class="card-image-top">
-                                    <img src="img/wk-jurassic0501-5.webp"
-                                        alt="">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text line-clamp">This is a wider card with supporting text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#edit-dino">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
                     </ul>
+
+
+                    <!-- <div class="dynoTabla" id="dynoTabla--">
+                    </div> -->
+
+
+
                 </div>
             </section>
 
