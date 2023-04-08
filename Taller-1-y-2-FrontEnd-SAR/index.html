@@ -100,51 +100,66 @@
 
             <section class="album py-5 bg-light cards">
 
-                <div class="text-center d-flex justify-content-center justify-content-center flex-column mb-4">
-                    <p>Mientras vas al parque conoce lo que quedó de ellos</p>
-                    <h3 class="mb-3">Busca un Fósil</h3>
-                    <form class="form-inline d-flex justify-content-center justify-content-center">
-                        <div class="form-group mb-2">
-                            <input type="text" class="" id="dynoName" name="searchDynof" value="" placeholder="Mi Fósil">
-                        </div>
-                        <button type="submit" onclick="buscarDyno()" class="btn btn-primary mb-2">Buscar</button>
-                    </form>
+                <div class="text-center d-flex justify-content-between flex-column mb-4">
+                    <div class="">
+                        <h4 class="mb-3">Mientras vas al parque conoce lo que quedó de ellos</h4>
+                        <form class="form-inline d-flex justify-content-center">
+                            <div class="form-group mb-2">
+                                <input type="text" class="dynoSearch disabled" id="dynoSearch" name="searchDynof" value="" placeholder="" onkeydown="buscarDyno()">
+                            </div>
+                            <!-- <div onclick="buscarDyno()" class="btn btn-primary mb-2">Buscar</div> -->
+                        </form>
+                    </div>
+                    <div class="">
+                        <small>Prueba buscando los términos:<i class="d-block"><strong>cráneo, torso, tórax, pelvis, cuerpo, cola, huella, cuello, ala, ámbar, tiranosaurio</strong></i> </small>
+                    </div>
                 </div>
 
                 <div class="container d-flex flex-column">
+                    <!-- Resultado que me debe reemplazar la primera pantalla -->
+                    <!-- <ul class="list-unstyled dinos" id="lista-resultados" style="background-color: rgb(253, 253, 4)"> -->
+                    <!-- </ul> -->
 
-                    <ul class="list-unstyled dinos" id="dinos">
-                        <!-- Aqui tengo que poner a rodar esto -->
-                        <!-- <li class="dino">
-                            <div class="card">
-                                <div class="card-image-top">
-                                    <img src="img/wk-jurassic0501-5.webp"
-                                        alt="">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text line-clamp">This is a wider card with supporting text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#edit-dino">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </li> -->
-
-
-
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#ficha" role="tab" aria-controls="ficha" aria-selected="true">Ver como Ficha</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="tabla-tab" data-toggle="tab" href="#tabla" role="tab" aria-controls="tabla" aria-selected="false">Ver como Tabla</a>
+                        </li>
                     </ul>
-
-
-                    <!-- <div class="dynoTabla" id="dynoTabla--">
-                    </div> -->
-
-
+                    <div class="tab-content bg-white border-right border-bottom border-left" id="myTabContent">
+                        <div class="tab-pane fade p-3 show active" id="ficha" role="tabpanel" aria-labelledby="ficha-tab">
+                            <!-- Muestra la lista original y luego la filtrada -->
+                            <ul class="list-unstyled dinos" id="dinos">
+                                <!-- Aqui tengo que poner a rodar esto -->
+                                <!-- <li class="dino">
+                                    <div class="card">
+                                        <div class="card-image-top">
+                                            <img src="img/wk-jurassic0501-5.webp"
+                                                alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text line-clamp">This is a wider card with supporting text below as a
+                                                natural
+                                                lead-in to additional content. This content is a little bit longer.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#edit-dino">Edit</button>
+                                                </div>
+                                                <small class="text-muted">9 mins</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade p-3" id="tabla" role="tabpanel" aria-labelledby="tabla-tab">
+                            <div class="dynoTabla" id="dynoTabla">
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </section>
@@ -169,101 +184,157 @@
             </div>
         </footer>
 
+
+        <!-- Modal Ficha completa -->
+        <div class="modal fade" id="detail-dino" tabindex="-1" role="dialog" aria-labelledby="detail-dinoLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title text-capitalize" id="detail-dinoLabel">NAME</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body px-5">
+
+                    <div class="border d-flex justify-content-center" id="detailImage">
+                        <img src="" alt="" id="detailImageImg">
+                    </div>
+                    <div>
+                        <small>Nombre científico</small>
+                        <h4 class="text-capitalize" id="detailCsiName">Nombre cientifico</h4>
+                        <p class="text-capitalize text-justify" id="detailDescription">Descripción</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <small>Parte de</small>
+                            <h5 class="text-capitalize" id="detailPartOf"></h5>
+                        </div>
+                        <div class="">
+                            <small>Llévate una copia</small>
+                            <h5 class="badgebadge badge-pill badge-info">$<span id="detailPrice">Precio</span></h5>   
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Pide el tuyo</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal Editar-->
+        <div class="modal fade" id="edit-dino" tabindex="-1" role="dialog" aria-labelledby="edit-dinoLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="edit-dinoLabel">Edit this Dyno</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="form-dino">
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Text</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                            Check me out
+                            </label>
+                        </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+
+        <script>
+            $('a').on('click', (event) => {
+                event.preventDefault()
+            })
+
+            window.onload = () => {
+                document.getElementById('dynoSearch').classList.remove('disabled');
+                document.getElementById('dynoSearch').classList.add('filosoraptor');
+                document.getElementById('dynoSearch').placeholder='Busca un Fósil';
+
+                window.parent.postMessage({
+                    type: 'LOADED',
+                }, '*')
+            }
+
+        </script>
+
     </body>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-
-    <script>
-        $('a').on('click', (event) => {
-            event.preventDefault()
-        })
-
-        window.onload = () => {
-            window.parent.postMessage({
-                type: 'LOADED',
-            }, '*')
-        }
-
-    </script>
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="edit-dino" tabindex="-1" role="dialog" aria-labelledby="edit-dinoLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="edit-dinoLabel">Edit this Dyno</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body">
-
-                <form id="form-dino">
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputEmail4">Text</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputAddress">Address</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="form-group">
-                      <label for="inputAddress2">Address 2</label>
-                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-                          <option selected>Choose...</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                          Check me out
-                        </label>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                  </form>
 
 
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-        </div>
-    </div>
+
 
 
 </html>

@@ -30,11 +30,12 @@
 }
 
 input, textarea {
-  background-color: lightgray;
+  background-color: #fff;
   height: 38px;
   border: none;
   padding-left: 10px;
   padding-right: 10px;
+  min-width: 35vw;
 }
 
 form label {
@@ -43,6 +44,7 @@ form label {
 
 body {
   color: #2d3238;
+  font-weight: 300;
 }
 body .navbar-toggler {
   color: #2d3238;
@@ -168,6 +170,15 @@ body .library_books:after {
 body .library_books:after {
   content: "INGEN";
 }
+body .line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+body .nav-link {
+  color: #2d3238;
+}
 body .jumbotron {
   background-image: url("../img/jurassic-world-camp-cretaceous-promo-bg.webp");
   background-position: 0px -80px;
@@ -175,7 +186,7 @@ body .jumbotron {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  height: 450px;
+  height: 400px;
   margin-bottom: 0;
   display: flex;
 }
@@ -209,6 +220,20 @@ body .album .dinos {
   gap: 10px;
   flex: 1;
 }
+body .album .dynoSearch.disabled {
+  background-image: url(../img/running-dinosaur.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #b8873a;
+  pointer-events: none;
+}
+body .album .dynoSearch.filosoraptor {
+  background-image: url(../img/Philosoraptor-PNG-File.png);
+  background-repeat: no-repeat;
+  background-position: 105% -16px;
+  background-size: 110px;
+}
 body .album .card {
   border-radius: 0;
 }
@@ -225,7 +250,7 @@ body .album .card .card-image-top img {
 }
 body .album .card .card-body {
   z-index: 1;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7647058824), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9098039216), rgba(0, 0, 0, 0.2392156863));
   color: #ffffff;
   position: absolute;
   bottom: 0;
@@ -236,16 +261,18 @@ body .album .card .card-body .card-text {
   font-size: 13px;
   line-height: 125%;
 }
-body .album .card .card-body .line-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+body .album .card .card-body .card-title {
+  font-size: 20px;
+  line-height: 100%;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.8);
+  font-weight: 100;
+  letter-spacing: 3px;
 }
 body .album .card .card-body .btn {
   border: solid 1px #ffffff;
   color: #ffffff;
-  min-width: 50px;
+  min-width: 57px;
+  font-size: 12px;
 }
 body .album .card .card-body .btn:is(:hover, :focus, :active) {
   background-color: rgba(255, 255, 255, 0.9);
@@ -256,6 +283,7 @@ body .album .card .card-body .text-muted {
   opacity: 0.7;
   line-height: 110%;
   text-align: right;
+  font-size: 70%;
 }
 
 footer {
@@ -272,11 +300,30 @@ footer .social a {
   text-decoration: none;
 }
 
-table {
-  background-color: red;
-}
 table tr, table th, table td {
-  border: solid 1px violet;
+  line-height: 135%;
+}
+table tr div, table th div, table td div {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+table tr .table-image, table th .table-image, table td .table-image {
+  background-color: #fff;
+  border: solid 1px #dee2e6;
+}
+table tr .table-image img, table th .table-image img, table td .table-image img {
+  height: auto;
+  width: 70px;
+}
+table tr .table-name, table th .table-name, table td .table-name {
+  text-transform: capitalize;
+}
+table tr .line-clamp, table th .line-clamp, table td .line-clamp {
+  -webkit-line-clamp: 3;
+}
+table tr .table-actions .btn-group .btn, table th .table-actions .btn-group .btn, table td .table-actions .btn-group .btn {
+  min-width: 57px;
 }
 
 @media screen and (max-width: 992px) {
