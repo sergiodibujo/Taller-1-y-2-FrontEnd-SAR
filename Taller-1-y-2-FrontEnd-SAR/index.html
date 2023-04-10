@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document Mac 2</title>
+        <title>Talleres</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
@@ -38,8 +38,7 @@
             </div>
             <div class="container d-flex justify-content-between">
                 <a href="#" class="navbar-brand d-flex align-items-center">
-                    <img src="img/logo.png" alt="DynoApi" height="30"
-                        width="auto">
+                    <img src="img/logo.png" alt="DynoApi" loading="lazy" height="30" width="auto">
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader"
                     aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,9 +102,9 @@
                 <div class="text-center d-flex justify-content-between flex-column mb-4">
                     <div class="">
                         <h4 class="mb-3">Mientras vas al parque conoce lo que quedó de ellos</h4>
-                        <form class="form-inline d-flex justify-content-center">
+                        <form class="form-inline d-flex justify-content-center searchBox" id="searchBox">
                             <div class="form-group mb-2">
-                                <input type="text" class="dynoSearch disabled" id="dynoSearch" name="searchDynof" value="" placeholder="" onkeydown="buscarDyno()">
+                                <input type="text" class="dynoSearch disabled" id="dynoSearch" name="searchDynof" value="" onkeydown="buscarDyno()">
                             </div>
                             <!-- <div onclick="buscarDyno()" class="btn btn-primary mb-2">Buscar</div> -->
                         </form>
@@ -136,8 +135,7 @@
                                 <!-- <li class="dino">
                                     <div class="card">
                                         <div class="card-image-top">
-                                            <img src="img/wk-jurassic0501-5.webp"
-                                                alt="">
+                                            <img src="img/wk-jurassic0501-5.webp" alt="" loading="lazy"> 
                                         </div>
                                         <div class="card-body">
                                             <p class="card-text line-clamp">This is a wider card with supporting text below as a
@@ -146,7 +144,7 @@
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="btn-group">
                                                     <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#edit-dino">Edit</button>
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#editDino">Edit</button>
                                                 </div>
                                                 <small class="text-muted">9 mins</small>
                                             </div>
@@ -186,19 +184,19 @@
 
 
         <!-- Modal Ficha completa -->
-        <div class="modal fade" id="detail-dino" tabindex="-1" role="dialog" aria-labelledby="detail-dinoLabel" aria-hidden="true">
+        <div class="modal fade" id="detailDino" tabindex="-1" role="dialog" aria-labelledby="detail-dinoLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title text-capitalize" id="detail-dinoLabel">NAME</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                    <h5 class="modal-title text-capitalize" id="detail-dinoLabel">NAME</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body px-5">
 
                     <div class="border d-flex justify-content-center" id="detailImage">
-                        <img src="" alt="" id="detailImageImg">
+                        <img src="" alt="" loading="lazy" id="detailImageImg">
                     </div>
                     <div>
                         <small>Nombre científico</small>
@@ -215,84 +213,86 @@
                             <h5 class="badgebadge badge-pill badge-info">$<span id="detailPrice">Precio</span></h5>   
                         </div>
                     </div>
-
-
-
-
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Pide el tuyo</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Pide el tuyo</button>
                 </div>
             </div>
             </div>
         </div>
 
+
+
+
+
         <!-- Modal Editar-->
-        <div class="modal fade" id="edit-dino" tabindex="-1" role="dialog" aria-labelledby="edit-dinoLabel" aria-hidden="true">
+        <div class="modal fade" id="editDino" tabindex="-1" role="dialog" aria-labelledby="edit-dinoLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="edit-dinoLabel">Edit this Dyno</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                    <h5 class="modal-title" id="edit-dinoLabel">Reporta un cambio</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="modal-body">
+                <form class="form-dino" id="formDyno">
+                    <div class="modal-body">
 
-                    <form id="form-dino">
-                        <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputEmail4">Text</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputPassword4">Password</label>
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                        </div>
-                        </div>
-                        <div class="form-group">
-                        <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
-                        <div class="form-group">
-                        <label for="inputAddress2">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputCity">City</label>
-                            <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputState">State</label>
-                            <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="inputZip">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
-                        </div>
-                        </div>
-                        <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                            Check me out
-                            </label>
-                        </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                    </form>
+                        <fieldset id="fieldsetformDyno">
+                            <div class="form-row">
+                            <div class="form-group col-md-4 d-flex justify-content-center">
+                                    <div class="border d-flex justify-content-center align-items-center w-100">
+                                        <img src="" alt="" loading="lazy" id="edit_image_uri">
+                                    </div>
+                            </div>
+                            
+                            <div class="form-group col-md-8">
+                                    <label for="EUesNamef">Nombre común</label>
+                                    <input type="text" class="form-control" id="edit_EUesName" name="EUesNamef">
+                                    <div class="invalid-feedback" id="alert_EUesName">Nombre común no puede estár vacío</div>
+                                
+                                    <label class="mt-2" for="file_namef">Nombre científico</label>
+                                    <input type="text" class="form-control" id="edit_file_name" name="file_namef">
+                                    <div class="invalid-feedback" id="alert_file_name">Nombre científico no puede estár vacío</div>
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <label for="pricef">Precio</label>
+                            <input type="text" class="form-control" id="edit_price" name="pricef">
+                            <div class="invalid-feedback" id="alert_price">Precio no puede estár vacío</div>
+                            </div>
+                            <div class="form-group">
+                            <label for="part_off">Parte de</label>
+                            <input type="text" class="form-control" id="edit_part_of" name="part_off">
+                            <div class="invalid-feedback" id="alert_part_of">Parte de no puede estár vacío</div>
+                            </div>
 
+                            <div class="form-group">
+                                <label for="museum_phrasef">Descripción</label>
+                                <textarea class="border" id="edit_museum_phrase" name="museum_phrasef" cols="100" rows="3"></textarea>
+                                <div class="invalid-feedback" id="alert_museum_phrase">Descripción no puede estár vacío</div>
+                            </div>
+                        </fieldset>
 
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                        <div class="alert alert-success d-none" role="alert" id="responseFormDyno">
+                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                <p><strong>Los datos serán revisados por nuestro panel de expertos.</strong></p>
+                                <img src="img/dynoreading.jpeg" alt="Reading" class="rounded-circle">
+                            </div>
+
+                            <div class="bar">
+                                <div class="in"></div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancelChanges">Cerrar</button>
+                        <button type="submit" class="btn btn-primary" id="sendChanges">Envía los cambios</button>
+                    </div>
+                </form>
             </div>
             </div>
         </div>
@@ -315,7 +315,7 @@
             $('a').on('click', (event) => {
                 event.preventDefault()
             })
-
+            // Aplicando cosas despueés de cargar la página
             window.onload = () => {
                 document.getElementById('dynoSearch').classList.remove('disabled');
                 document.getElementById('dynoSearch').classList.add('filosoraptor');

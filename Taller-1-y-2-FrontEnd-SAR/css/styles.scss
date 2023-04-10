@@ -26,33 +26,40 @@ $hex-i: 50px;
         font-size: 10px;
     }
 }
-
+@mixin inputs() {
+    background-color: #fff;
+    border: none;
+    color: $text-color;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
 
 
 // General Buttons
 .btn {
     border-radius: 0;
 }
-.btn-primary {
+.btn-primary, .btn-primary.disabled, .btn-primary:disabled {
     background-color: $primary_color;
     border: solid 1px $primary_color;
 
     &:is(:hover,:active,:focus) {
-        background-color: darken($primary_color,10%);
-        border: solid 1px darken($primary_color, 10%);
+        background-color: darken($primary_color,10%)!important;
+        border: solid 1px darken($primary_color, 10%)!important;
     }
 }
-.btn-secondary {
+.btn-secondary, .btn-secondary.disabled, .btn-secondary:disabled {
     background-color: $secondary_color;
     border: solid 1px $secondary_color;
-    color: $text-color;
+    color: darken($secondary_color, 50%);;
 
     &:is(:hover,:active,:focus) {
         background-color: darken($secondary_color,10%);
         border: solid 1px darken($secondary_color, 10%);
     }
 }
-.btn-line {
+.btn-line, .btn-line.disabled, .btn-line:disabled {
     background-color: transparent;
     border: solid 1px $text-color;
 
@@ -61,16 +68,32 @@ $hex-i: 50px;
     }
 }
 
-input, textarea {
-    background-color: #fff;
+// Invalid feedback
+.second-feedback, .invalid-feedback {
+    color: #f41b4e;
+    font-size: 70%;
+    line-height: 14px;
+    margin-top: 2px;
+}
+.form-control {
+    color: $text-color;
+} 
+label {
+    font-size: .9rem;
+    margin-bottom: .1rem;
+}
+input {
+    @include inputs();
     height: 38px;
-    border: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    min-width: 35vw;
+}
+textarea {
+    @include inputs();
 }
 form label {
     display: block;
+}
+.disabled, :disabled {
+  pointer-events: none;
 }
 body {
     color: $text-color;
@@ -214,6 +237,11 @@ body {
         }
     }
     
+    .searchBox {
+        input {
+            min-width: 35vw;
+        }
+    }
     .album {
 
         .dinos {
@@ -228,7 +256,9 @@ body {
             flex: 1;
 
         }
-
+        .dynoSearch {
+            position: relative;
+        }
         .dynoSearch.disabled {
             background-image: url(../img/running-dinosaur.gif);
             background-repeat: no-repeat;
@@ -236,6 +266,20 @@ body {
             background-size: contain;
             background-color: #b8873a;
             pointer-events: none;
+
+            // No se por que no se aplicó
+            &::after {
+                content: "Un momento...";
+                color: $light-color;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 2;
+                display: block;
+                height: 20px;
+                width: 20px;
+                font-size: $font-body;
+            }
         }
         
         .dynoSearch.filosoraptor {
@@ -305,6 +349,40 @@ body {
             }   
         }
     }
+
+    .form-dino {
+        input {
+            text-transform: capitalize;
+        }
+    }
+
+    .alert-success {
+        background-color: $secondary_color;
+        color: darken($secondary_color, 50%);
+    }
+
+    // Progress bar
+    .bar {
+        height: 3px;
+        width: 100%;
+        border-radius: 2px;
+        
+        .in {
+          animation: fill 10s linear 1;
+          background-color: darken($secondary_color, 30%);;
+          height: 100%;
+          margin-top: 20px;
+        }
+      }
+      
+      @keyframes fill {
+        0% {
+          width: 100%;
+        }
+        100% {
+          width: 0%;
+        }
+      }
 }
 // Footer
 footer {
