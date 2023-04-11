@@ -36,9 +36,9 @@ fetch("https://raw.githubusercontent.com/sergiodibujo/Taller-1-y-2-FrontEnd-SARF
   .then(data => {
 
 	  const dynoArray = data;
-	//   console.log(dynoArray[0].results)
+	// console.log(dynoArray[0].results)
 
-	//   console.log(dynoArray.length)
+	// console.log(dynoArray.length)
 	
 		const table = document.createElement('table');
 			table.classList.add("table");
@@ -440,7 +440,7 @@ sendForm_formDyno.addEventListener("submit", function(e) {
 			valido_price();
 		}
 		// Si hay alguno vacío paro todo
-		console.log(`Si hay alguno vacío, paro todo`)
+		// console.log(`Si hay alguno vacío, paro todo`)
 		return;
 	}else{
 		console.log(`NOS JUIMOS`)
