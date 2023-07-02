@@ -1,1 +1,2 @@
 Este es el repositorio de Sergio del Taller 2 Fron t End intermedio.
+QUE PASA? 
